@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;1,300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;1,300&display=swap");
 
 * {
   margin: 0;
@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  font-family: 'Roboto Mono', sans-serif;
+  font-family: "Roboto Mono", sans-serif;
   color: #252525;
   font-weight: 400;
   background-color: #f7f2e9;
@@ -55,7 +55,7 @@ body {
 .header h1::before,
 .header h1::after {
   display: block;
-  content: '';
+  content: "";
   height: 3px;
   width: 12rem;
   background-color: #edc84b;
@@ -176,6 +176,118 @@ body {
 
 .btn:hover {
   background-color: #e9bb24;
+}
+
+@media (max-width: 900px) {
+  body {
+    padding: 2.4rem;
+    padding-bottom: 4.8rem;
+  }
+
+  .container {
+    gap: 3.6rem;
+  }
+
+  .header h1 {
+    font-size: 4.2rem;
+    letter-spacing: 2px;
+  }
+
+  .header h1::before,
+  .header h1::after {
+    width: 8rem;
+  }
+
+  .pizzas {
+    gap: 3.2rem;
+  }
+
+  .pizza {
+    gap: 2rem;
+  }
+
+  .pizza img {
+    width: 10rem;
+  }
+}
+
+@media (max-width: 640px) {
+  html {
+    font-size: 56.25%;
+  }
+
+  body {
+    padding: 1.6rem;
+    padding-bottom: 3.2rem;
+    border-bottom-width: 1rem;
+  }
+
+  .container {
+    gap: 2.8rem;
+  }
+
+  .header h1 {
+    font-size: 3.2rem;
+    letter-spacing: 1px;
+  }
+
+  .header h1::before,
+  .header h1::after {
+    display: none;
+  }
+
+  .menu {
+    gap: 2.4rem;
+  }
+
+  .menu h2 {
+    font-size: 2rem;
+    letter-spacing: 2px;
+  }
+
+  .menu > p {
+    width: 100%;
+    font-size: 1.4rem;
+  }
+
+  .pizzas {
+    grid-template-columns: 1fr;
+    gap: 2.4rem;
+  }
+
+  .pizza {
+    gap: 1.6rem;
+  }
+
+  .pizza h3 {
+    font-size: 1.8rem;
+  }
+
+  .pizza p {
+    font-size: 1.3rem;
+  }
+
+  .pizza span {
+    font-size: 1.5rem;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 24rem;
+    padding: 1.2rem 2.4rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .pizza {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .pizza img {
+    width: 100%;
+    max-width: 24rem;
+  }
 }
 
 /*
